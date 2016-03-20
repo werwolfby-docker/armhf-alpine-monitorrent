@@ -46,3 +46,7 @@ rmf:
 
 rmi:
 	docker rmi $(NAMESPACE)/$(IMAGENAME)
+
+
+rmbak:
+	docker rmi $(NAMESPACE)/$(IMAGENAME):bak
