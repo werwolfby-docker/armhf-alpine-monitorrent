@@ -50,3 +50,7 @@ rmi:
 
 rmbak:
 	docker rmi $(NAMESPACE)/$(IMAGENAME):bak
+
+
+push:
+	docker push $(NAMESPACE)/$(IMAGENAME)

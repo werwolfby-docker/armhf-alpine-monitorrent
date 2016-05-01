@@ -7,6 +7,6 @@ COPY monitorrent /var/www/monitorrent
 
 WORKDIR /var/www/monitorrent
 
-EXPOSE 5000
+EXPOSE 6687
 
 CMD ["python", "server.py"]
