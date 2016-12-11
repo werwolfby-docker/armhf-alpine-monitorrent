@@ -48,8 +48,12 @@ rmi:
 	docker rmi $(NAMESPACE)/$(IMAGENAME)
 
 
-rmbak:
+rmibak:
 	docker rmi $(NAMESPACE)/$(IMAGENAME):bak
+
+
+tag:
+	docker tag $(NAMESPACE)/$(IMAGENAME) $(NAMESPACE)/$(IMAGENAME):$(MONITORRENT_VERSION)
 
 
 push:
