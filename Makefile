@@ -9,6 +9,8 @@ timestamp := $(shell date +"%Y%m%d%H%M")
 
 download:
 	wget https://github.com/werwolfby/monitorrent/releases/download/$(MONITORRENT_VERSION)/monitorrent-$(MONITORRENT_VERSION).zip -O monitorrent.zip
+
+unzip:
 	rm -R monitorrent || true
 	mkdir monitorrent
 	unzip monitorrent.zip -d monitorrent
