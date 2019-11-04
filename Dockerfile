@@ -1,4 +1,4 @@
-FROM werwolfby/armhf-alpine-python
+FROM python:alpine
 MAINTAINER Alexander Puzynia <werwolf.by@gmail.com>
 
 COPY monitorrent/requirements.txt /var/www/monitorrent/requirements.txt
